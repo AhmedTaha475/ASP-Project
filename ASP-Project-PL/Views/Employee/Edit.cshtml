@@ -1,0 +1,88 @@
+﻿@model ASP_Project_BLL.Model.EmployeeVM
+@{
+    ViewData["Title"] = "Edit";
+   
+}
+
+<h1>Edit Employee</h1>
+
+
+
+<br />
+
+<form  asp-controller="Employee" asp-action="Edit" enctype="multipart/form-data">
+    <input asp-for="DistrictId" type="hidden" />
+    <input asp-for="id" type="hidden" />
+    <input asp-for="CvName" type="hidden" />
+    <input asp-for="PhotoName" type="hidden" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <br /><br />
+    <div class="form-group">
+        <label>Employee Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Employee Salary</label>
+        <input type="text" asp-for="salary" class="form-control" />
+        <span asp-validation-for="salary" class="text-danger"></span>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label>Employee Email</label>
+        <input type="email" asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label>Employee HireDate</label>
+        <input type="date" asp-for="HireDate" class="form-control" />
+        <span asp-validation-for="HireDate" class="text-danger"></span>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label>Employee Address</label>
+        <input type="text" asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label>Employee Notes</label>
+        <textarea asp-for="Notes" class="form-control"></textarea>
+
+    </div>
+
+    <br />
+    <div class="demo-checkbox">
+        <input type="checkbox" asp-for="IsActive" />
+        <label>Is Active</label>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label>Department</label>
+        <select asp-for="DepartmentId" class="form-control" asp-items="(SelectList)ViewBag.Departments">
+            <option>Choose Department</option>
+        </select>
+    </div>
+    <br />
+
+
+
+    <center>
+
+        <button type="submit" class="btn btn-primary"> Edit</button>
+        <a  asp-controller="Employee" asp-action="Index" class="btn btn-info"> Back</a>
+    </center>
+
+    <br /><br />
+
+
+</form>
+
+

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ASP_Project_BLL.Model.EmployeeVM>
+@{
+    ViewData["Title"] = "Index";
+    
+}
+
+<a  asp-controller="Employee" asp-action="CreateEmployee" class="btn btn-primary">Create New Employee</a>
+<br />
+<br />
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Employee Name</th>
+            <th>Employee Email</th>
+            <th>Department Name</th>
+            <th>District Name</th>
+            <th>Details</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Department.DepartmentName</td>
+                <td>@item.District.DistrictName</td>
+                <td><a class="btn btn-success"  asp-controller="Employee" asp-action="Details" asp-route-id="@item.id">Details</a></td>
+                <td><a class="btn btn-info"  asp-controller="Employee" asp-action="Edit" asp-route-id="@item.id">Edit</a></td>
+                <td><a class="btn btn-danger"  asp-controller="Employee" asp-action="Delete" asp-route-id="@item.id">Delete</a></td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section DataTable {
+    <script src="~/js/datatables.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#example').DataTable({
+
+                "lengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]]
+            });
+        });
+    </script>
+}
+
+

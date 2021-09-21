@@ -1,0 +1,38 @@
+﻿@model ASP_Project_BLL.Model.UserVM
+@{
+    ViewData["Title"] = "RemoveRole";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<h2 class="text-danger">Remove User from Role</h2>
+<form asp-controller="User" asp-action="RemoveRole" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <br />
+    <input type="email" readonly asp-for="UserName" class="form-control" />
+    @*<br />
+    <h3>This User is also Assigned to these Roles</h3>
+    <br />
+    @foreach (var item in ViewBag.Roles)
+    {
+        <ol>
+            <li>@item</li>
+        </ol>
+
+    }*@
+    <br /><br />
+          <select asp-for="RoleName" class="form-control">
+              <option> Choose Role </option>
+              @foreach (var item in ViewBag.Roles)
+              {
+                  <option> @item </option>
+              }
+
+
+          </select>
+    <br /><br />
+    <button type="submit" class="btn btn-danger"> Remove</button>
+    <a class="btn btn-info" asp-controller="User" asp-action="Index"> Back</a>
+    <br />
+    <br />
+</form>

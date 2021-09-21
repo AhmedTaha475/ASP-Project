@@ -1,0 +1,37 @@
+﻿@model ASP_Project_BLL.Model.DepartmentVM
+@{
+    ViewData["Title"] = "Edit";
+
+}
+
+<h1>Create New Department</h1>
+
+<br />
+<br />
+
+<form  asp-controller="Department" asp-action="Edit">
+
+
+    <input type="hidden"  asp-for="Id"/>
+    <div class="form-group">
+        <label> Enter Department Name</label>
+        <input asp-for="DepartmentName" class="form-control" />
+        <span asp-validation-for="DepartmentName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label> Enter Department Code</label>
+        <input asp-for="DepartmentCode" class="form-control" />
+        <span asp-validation-for="DepartmentCode" class="text-danger"></span>
+    </div>
+
+
+
+    <center>
+        <button type="submit" class="btn btn-primary"> Edit</button>
+        <a class="btn btn-info"  asp-controller="Department" asp-action="Index"> Back</a>
+    </center>
+
+    <br /><br />
+
+</form>

@@ -1,0 +1,15 @@
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ASP-Project-DAL.deps.json
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ASP-Project-DAL.runtimeconfig.json
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ASP-Project-DAL.runtimeconfig.dev.json
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ASP-Project-DAL.dll
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ref\ASP-Project-DAL.dll
+C:\Users\LEGION\source\repos\ASP-Project-DAL\bin\Release\net5.0\ASP-Project-DAL.pdb
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.csproj.AssemblyReference.cache
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.AssemblyInfoInputs.cache
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.AssemblyInfo.cs
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.dll
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ref\ASP-Project-DAL.dll
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.pdb
+C:\Users\LEGION\source\repos\ASP-Project-DAL\obj\Release\net5.0\ASP-Project-DAL.genruntimeconfig.cache
